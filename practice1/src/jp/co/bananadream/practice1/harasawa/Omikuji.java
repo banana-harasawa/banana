@@ -28,15 +28,11 @@ public class Omikuji {
 		int num = rand.nextInt(5);
 
 		//文字列連結
-		String s1 = "今日の運勢は";
-		String s2 = kuji.get(num);
-		String s3 = "です。";
 		StringBuffer buf = new StringBuffer();
-		buf.append(s1);
-		buf.append(s2);
-		buf.append(s3);
-		String s = buf.toString();
+		buf.append("今日の運勢は");
+		buf.append(kuji.get(num));
+		buf.append("です。");
 
-		return s;
+		return buf.toString();
 	}
 }
