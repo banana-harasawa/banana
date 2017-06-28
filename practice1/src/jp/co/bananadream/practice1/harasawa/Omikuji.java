@@ -28,7 +28,7 @@ public class Omikuji {
 		int num = rand.nextInt(5);
 
 		//文字列連結
-		StringBuffer buf = new StringBuffer();
+		StringBuilder buf = new StringBuilder();
 		buf.append("今日の運勢は");
 		buf.append(kuji.get(num));
 		buf.append("です。");
