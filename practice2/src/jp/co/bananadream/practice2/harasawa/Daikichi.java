@@ -31,12 +31,17 @@ class Daikichi extends Omikuji {
 	@Override
 	public String disp() {
 		// TODO 自動生成されたメソッド・スタブ
-		System.out.println("今日の運勢は"+ getUnsei() +"です");
-		System.out.println("願い事："+ getNegaigoto());
-		System.out.println("商い"+ getAkinai());
-		System.out.println("学問"+ getGakumon());
-
-		return "";
+		
+		//文字列連結
+				StringBuilder buf = new StringBuilder();
+				buf.append("今日の運勢は");
+				buf.append(getUnsei());
+				buf.append("です。");
+				buf.append(" 願い事：");
+				buf.append(getAkinai());
+				buf.append(" 学問：");
+				buf.append(getGakumon());
+		return buf.toString();
 	}
 	
 }
